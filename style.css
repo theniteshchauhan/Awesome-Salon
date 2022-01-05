@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #1f2937;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding: 0px 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img{
+    width:120px
+}
+
+nav{
+    flex:1;
+    text-align:right;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-right:20px ;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}

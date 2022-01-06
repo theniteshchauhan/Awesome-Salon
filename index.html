@@ -15,7 +15,14 @@
                 <div class="logo">
                     <img src="logo.png" alt="logo">
                 </div>
-                <nav>
+                
+                <div class="menu">
+                        <a href="#" id="menu-btn">
+                            <img  src="menu.png" alt="menu icon">
+                        </a>
+                    </div>
+
+                <nav id="nav-bar">
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Features</a></li>
@@ -25,7 +32,8 @@
                     </ul>
                 </nav>
                 </div>
-            
+                
+
                 <div class="content">
                     <h1>Blossom Salon</h1>
                     <p>Time-saving services to help you look and feel beautiful.</p>
@@ -38,5 +46,17 @@
         </div>
         
     </header>
+
+    <script>
+        var menuItems=document.getElementsById("menu-btn");
+        var navbar=document.getElementById("nav-bar")[0];
+        menuItems.addEventListener("click", ()=>{
+
+            navbar.classList.toggle("is-active");
+
+        })
+
+    </script>
+
 </body>
 </html>

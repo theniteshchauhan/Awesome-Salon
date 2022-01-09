@@ -121,9 +121,8 @@ header {
     .navbar ul li {
         margin-bottom: 10px;
     }
-
-    .navbar ul:active {
-        display: none;
+    .check:active ~ .nav {
+        font-size: 500px;
     }
 }
 

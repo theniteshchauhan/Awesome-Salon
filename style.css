@@ -29,7 +29,6 @@ header {
 
 .navbar ul {
     list-style: none;
-    display: flex;
 }
 
 .navbar ul li {
@@ -46,6 +45,31 @@ header {
 .navbar ul li a:hover {
     color: #22d3ee;
 }
+
+.navbar input {
+    position: absolute;
+    top: 20px;
+    right: 7%;   
+    display: none; 
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 7%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: azure;
+    border-radius: 5px;
+} 
 
 .content {
     padding-top: 180px;
@@ -77,24 +101,6 @@ header {
     color: #22d3ee;
 }
 
-.menu {
-    position: absolute;
-    top: 20px;
-    right: 5%;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-
-}
-
-.bar {
-    height: 4px;
-    width: 100%;
-    background-color: azure;
-    border-radius: 5px;
-}
 
 
 @media (max-width:700px) {
@@ -108,62 +114,25 @@ header {
     }
 
     nav {
-        display: flex;
         width: 100%;
     }
 
-    .navbar ul{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+  
+    .toggle-btn:checked ~ nav {
+        display: none;
     }
+
+    
 
     .navbar ul li {
-        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
-    .check:active ~ .nav {
-        font-size: 500px;
+
+    .navbar ul li a{
+        margin-bottom: 10px;
+        margin-right: 10px;
     }
 }
-
-
-
-
-
-
-
-/* @media (max-width:800px) {
-    .container {
-        padding: 0%;
-        margin: 0%;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0%;
-        margin: 0%;
-    }
-
-    nav {
-        display: none;
-        background: black;
-        width:100%;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin-right: 20px;
-    }
-
-    nav ul li {
-        padding: 10px;
-    }
-
-    .menu img {
-        display: flex;
-    }
-} */
